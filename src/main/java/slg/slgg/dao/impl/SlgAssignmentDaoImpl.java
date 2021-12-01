@@ -8,7 +8,7 @@ import slg.slgg.pojo.request.SlgRequest;
 import slg.slgg.pojo.response.SlgResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import slg.slgg.row.mapper.Assignment;
+import slg.slgg.pojo.Assignment;
 
 @Service
 public class SlgAssignmentDaoImpl implements SlgAssignmentDao {

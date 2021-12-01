@@ -1,10 +1,10 @@
-package slg.slgg.row.mapper;
+package slg.slgg.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import slg.slgg.pojo.Player;
+
 
 import java.util.List;
 
