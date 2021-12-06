@@ -14,6 +14,6 @@ import java.util.List;
 @Setter
 public class Assignment {
     private List<Player> player;
-    private String recipient_type;
+    private String recepients_type;
 
 }

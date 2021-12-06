@@ -23,17 +23,17 @@ public class SlgAssignmentDaoImpl implements SlgAssignmentDao {
 
         Assignment assignment = new Assignment();
         assignment.setPlayer(slgRequest.getRecipients().get(0).getPlayers());
-        assignment.setRecipient_type(slgRequest.getRecipients().get(0).getRecipients_type());
+        assignment.setRecepients_type(slgRequest.getRecipients().get(0).getRecepients_type());
         ObjectMapper mapper = new ObjectMapper();
         String assignmentjson = mapper.writeValueAsString(assignment);
 
      Integer attempts = slgRequest.getRecipients().get(0).getMax_attempts();
      String start_date= slgRequest.getRecipients().get(0).getStart_date();
      String end_date= slgRequest.getRecipients().get(0).getEnd_date();
-        String attempt_type = slgRequest.getRecipients().get(0).getAttempts_type();
+        String attempts_type = slgRequest.getRecipients().get(0).getAttempts_type();
 
         jdbcTemplate.update(sql,slgRequest.getCompany_id(),slgRequest.getGame_id(),assignmentjson,
-                attempts,start_date,end_date,attempt_type,1);
+                attempts,start_date,end_date,attempts_type,1);
 
        SlgResponse slgResponse = new SlgResponse();
        String sqll = "Select assignment_id from sh_slg_assignment where company_id ="+ slgRequest.getCompany_id()+

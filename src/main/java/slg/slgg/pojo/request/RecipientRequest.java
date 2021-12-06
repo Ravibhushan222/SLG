@@ -14,7 +14,7 @@ import java.util.List;
 @Getter
 @Setter
 public class RecipientRequest {
-    private  String recipients_type;
+    private  String recepients_type;
     private String attempts_type;
     private String start_date;
     private String end_date;
