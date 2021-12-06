@@ -15,5 +15,5 @@ public class Player {
 private Integer key_id;
 private String filter_key;
 private Boolean is_all;
-List<Values>values;
+private List<Values>values;
 }
